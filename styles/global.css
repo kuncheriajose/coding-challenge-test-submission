@@ -10,12 +10,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* TODO: Add the 'Roboto' font from Google fonts and add it as a global CSS var called `--font-primary` */
-/* TODO: Make application responsive. It is already for the most part, but it is not optimal for smaller screens.
-* - Making the application responsive using the Mobile First principle.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
+  --font-primary: 'Roboto', sans-serif;
   --border-radius-default: 4px;
   --border-radius-xl: 15px;
   --color-accent: #cacfdd;
