@@ -30,15 +30,37 @@ code {
   box-sizing: border-box;
 }
 
+/* Mobile First: base styles for small screens */
 body {
   accent-color: var(--color-brand);
-  font-size: 18px;
+  font-size: 16px;
   font-family: var(--font-primary);
   background: var(--color-accent);
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+@media (min-width: 480px) {
+  body {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    padding: 2rem;
+  }
 }
 
 small {
@@ -51,10 +73,16 @@ fieldset {
   border: none;
   border-bottom: 1px solid var(--color-accent);
   border-top: 1px solid var(--color-accent);
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   max-width: var(--width-input);
   padding: 1rem 0;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  fieldset {
+    margin: 2rem 0;
+  }
 }
 
 legend {
